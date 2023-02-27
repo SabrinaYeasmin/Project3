@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Guess My Number</title>
+</head>
+<body>
+  <h1 class="heading-h1 animate__animated animate__backInDown">GUESS MY NUMBER</h1>
+  <h4 class="heading-h4 animate__animated animate__bounceInRight">Guess the number between 1 and 100</h4>
+  <div class="container">
+    <div id="score-btn">
+      <div class="score">
+        <p class="show-score">Attempts:</p>
+        <p class="high-score">Lowest Attempts:</p>
+      </div>
+      <div class="btn-div">
+        <button class="rst-btn reset-button" type="reset">Reset</button>
+      </div>
+    </div>
+    <div hidden class="input-div">
+      <img class="game-img" src="./OBFINX0.jpg" alt="OBFINX0.jpg">
+      <input type="text" id="guess-input" placeholder="Enter you number">
+      <button class="check-btn" id="guess-button">Check</button>
+      <p class="message">Enter a number between 1 and 100!</p>
+    </div>
+    <div hidden id="winner-div">
+      <div class="you-win-container">
+        <div class="you-win">
+          <h3>YOU WIN</h3>
+        </div>
+      </div>
+      <h3 class="animate__animated animate__zoomInUp">Congratulations!</h3>
+      <p class="winner-msgP"></p>
+      <h3 class="winner-msgh3"></h3>
+      <p class="winner-msgS"></p>
+      <button id="play-again" class="check-btn">Play Again</button>
+    </div>
+    <div id="lose-div">
+      <div class="you-lose-container">
+        <div class="you-lose">
+          <h3 class="game-over">GAME OVER</h3>
+        </div>
+      </div>
+      <h3 class="animate__animated animate__heartBeat sorry">Sorry, you did not find the number</h3>
+      <p>Dont't give up and Try Again</p>
+      <p class="lose-msg"></p>
+      <button id="try-again" class="check-btn">Try Again</button>
+    </div>
+    <div class="guess-history">
+      <h4>Guess History</h4>
+      <div id="prev-guesses"></div>
+    </div>
+  </div>
+</body>
+</html>
